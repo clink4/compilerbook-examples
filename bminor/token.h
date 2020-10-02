@@ -1,0 +1,57 @@
+#ifndef TOKEN_H
+#define TOKEN_H
+
+typedef enum {
+     TOKEN_EOF=0,
+     TOKEN_ERROR,
+		 TOKEN_KEYWORD,
+     TOKEN_ARRAY, //first keyword
+     TOKEN_BOOLEAN,
+     TOKEN_CHAR,
+     TOKEN_ELSE,
+     TOKEN_FALSE,
+     TOKEN_FOR,
+     TOKEN_FUNCTION,
+     TOKEN_IF,
+     TOKEN_INTEGER,
+     TOKEN_PRINT,
+     TOKEN_RETURN,
+     TOKEN_STRING,
+     TOKEN_TRUE,
+     TOKEN_VOID,
+     TOKEN_WHILE, //last keyword
+     TOKEN_IDENT,
+     TOKEN_INT,
+     TOKEN_CHAR_LITERAL,
+     TOKEN_STRING_LITERAL,
+     TOKEN_LPAREN,
+     TOKEN_RPAREN,
+     TOKEN_LBRACKET,
+     TOKEN_RBRACKET,
+     TOKEN_INCR,
+     TOKEN_DECR,
+     TOKEN_PLUS,
+     TOKEN_MINUS,
+     TOKEN_LT,
+     TOKEN_LE,
+     TOKEN_GT,
+     TOKEN_GE,
+     TOKEN_EQ,
+     TOKEN_NE,
+     TOKEN_LOGIC_AND,
+     TOKEN_LOGIC_OR,
+     TOKEN_ASSIGN,
+     TOKEN_LOGIC_NOT,
+     TOKEN_EXPONENT,
+     TOKEN_MULT,
+     TOKEN_DIVISION,
+     TOKEN_MOD,
+     TOKEN_COLON,
+     TOKEN_COMMA,
+     TOKEN_SEMICOLON,
+     TOKEN_LBRACE,
+     TOKEN_RBRACE,
+     TOKEN_UNMATCHED_COMMENT
+} token_t;
+
+#endif
